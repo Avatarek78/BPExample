@@ -11,7 +11,7 @@ TODO: Sepsat presne postup jak jsem to cele rozchodil (a vzteky to u toho nerozs
 
 > [!IMPORTANT]
 > No jediný způsob jak to opravit je celé to zavřít (UE i VS) a smazat jak v projektu **BPExample** tak ve vnořeném projektu 
-> **Plugins\ExampleBlankPlugin** složky **Binaries** a **Intermediate** a v **BPExample** ještě složku .vs.
+> **Plugins\ExampleBlankPlugin** složky **Binaries** a **Intermediate** a v **BPExample** ještě složku **.vs.**
 > Potom znovu otevřít projekt a nechat ho celý i s pluginen znovu sestavit. To je prostě taková 💩
 
 ----
