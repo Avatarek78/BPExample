@@ -3,7 +3,7 @@
 
 ## Jak to celé rozchodit a nezbláznit se z toho
 
-TODO: Sepsat presne postup jak jsem to cele rozchodil (a vzteky to u toho nerozslapal)
+TODO: Sepsat presne postup jak jsem to cele rozchodil
 
 ## Tyhle věci se věčně hnojí sami od sebe!
 
