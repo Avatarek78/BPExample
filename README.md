@@ -1,4 +1,4 @@
-# Unreal Engine Demonstrační, originálně vytvořený pouze jako BP projekt s přidáním C++ zdrojáků dodatečně a následným přidáním pluginu
+# Unreal Engine demonstrační, originálně vytvořený pouze jako BP projekt s přidáním C++ zdrojáků dodatečně a následným přidáním pluginu
 ![Vytvoření projektu](Doc/create-project.png)
 
 ## Jak to celé rozchodit a nezbláznit se z toho
