@@ -1,11 +1,19 @@
 # Unreal Engine demonstrační, originálně vytvořený pouze jako BP projekt s přidáním C++ zdrojáků dodatečně a následným přidáním pluginu
 ![Vytvoření projektu](Doc/create-project.png)
 
-## Jak to celé rozchodit a nezbláznit se z toho
+## Jak přidat plugin, ale hlavně jak to celé rozchodit a nezbláznit se z toho
 
-TODO: Sepsat presne postup jak jsem to cele rozchodil
+- založit nový UE projekt, ideálně rovnou na začátku zvolit variantu C++ projekt (nebo dodatečně přidat nějakou C++ třídu a nechat tak vygenerovat .sln soubor),
+  pokud chceme vytvořit všechny typy pluginů, protože v projektu bez C++ lze vytvořit jen plugin typu "Content Only" a o takový mě v této demonstraci vůbec nejde.
+- dále u lze pokračovat např. dle tohoto návodu https://www.quodsoler.com/blog/how-to-create-an-unreal-engine-plugin-a-step-by-step-guide-with-examples
+  ve kterém mimochodem ten první důležitý bod vůbec nezmiňují, takže skončíte s návodem hned po první minutě a dál to nejde.
+- pak tedy dle návodu Edit -> Plugins -> [+Add] -> Blank -> Pojmenovat plugin a zaškrtnout
 
-## Tyhle věci se věčně hnojí sami od sebe!
+  Do teď to vypadá jako pohoda, ale jen do té doby, než se začnou dít hrozné věci bez zjevných příčin o kterých se dozvíte v dalších řádcích níže.
+
+----
+
+## ☠️Tyhle věci se věčně hnojí sami od sebe!☠️
 
 ❌ Předchozí den vše v poho, další den jen otevřeš projekt, klikneš na Live Coding a hle:
 
@@ -57,9 +65,10 @@ Každopádně jediné řešení na které jsem přišel je uvedeno na konci tét
 > propsalo do UE?! 🤦‍♂️
 > ![image](Doc/method_name_change_detected.png)
 
-
 ----
+
 ## Pokročilejší možnosti
+> zdroj: ChatGPT
 - [Nastaveni log level-u](Log_level.MD)
 
 - [Vytváření BP nodů s možností přidat/odebrat piny nebo některé parametry skrýt](BP_with_add_pins_or_hide_parameters_in_CPP.MD)
