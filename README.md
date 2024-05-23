@@ -55,7 +55,7 @@ Každopádně jediné řešení na které jsem přišel je uvedeno na konci tét
 > Prostě nic normálního co by fungovalo za běhu nefunguje, až když zavřel UE a VS a ve složce pluginu jsem smazal složky Binaries a Intermidiate tak se to při otevírání projektu, 
 > přeptalo na rebuild a konečně to zjistilo skutečnost, že jsem přejmenoval fci LogInfo na Log. Takže to jako budu dělat při každé změně ve zdrojáku takového tanečky, aby se to milostivě
 > propsalo do UE?! 🤦‍♂️
-> ![image](https://github.com/Avatarek78/BPExample/assets/18666680/eae77941-b83c-4736-b84a-b53106c50309)
+> ![image](Doc/method_name_change_detected.png)
 
 
 ----

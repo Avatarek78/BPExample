@@ -32,9 +32,17 @@ public:
     UFUNCTION(BlueprintCallable, Category = "PluginExample")
     void ExampleFunction();
 
-    /** Print text to log as info, for details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine */
+    /** 
+    * Print text to log as FATAL Always prints a fatal error to console (and log file) and crashes (even if logging is disabled). 
+    * !!! BEWARE OF USING THIS METHOD, BECAUSE IT TRULY CAUSES CRASH NOT ONLY GAME BUT ALSO WHOLE UNREAL ENGINE !!!
+    * For details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine 
+    */
     UFUNCTION(BlueprintCallable, Category = "PluginExample")
-    void LogInfo(const FString& message);
+    void LogFatal(const FString& message);
+
+    /** Print text to log as INFO. Prints a message to a log file (does not print to console). For details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine */
+    UFUNCTION(BlueprintCallable, Category = "PluginExample")
+    void Log(const FString& message);
 
     /** Print text to log as warning, for details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine */
     UFUNCTION(BlueprintCallable, Category = "PluginExample")

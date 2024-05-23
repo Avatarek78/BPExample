@@ -57,7 +57,12 @@ void UExamplePluginClass::ExampleFunction()
     GEngine->AddOnScreenDebugMessage(-1, 100.0f, FColor::Magenta, "UExamplePluginClass::ExampleFunction()");
 }
 
-void UExamplePluginClass::LogInfo(const FString& message)
+void UExamplePluginClass::LogFatal(const FString& message)
+{
+    UE_LOG(LogTemp, Fatal, TEXT("%s"), *message);
+}
+
+void UExamplePluginClass::Log(const FString& message)
 {
     UE_LOG(LogTemp, Log, TEXT("%s"), *message);
 }
