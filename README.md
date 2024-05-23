@@ -43,6 +43,21 @@ Každopádně jediné řešení na které jsem přišel je uvedeno na konci tét
 > To je prostě taková 💩
 > Pokud by to postoupilo na vyšší level a ani tohle nepomohlo, potom jedině asi ještě smazat složky **.vs** a **Binaries**
 
+❌ Dostal jsem to do stavu, kdy to vůbec nereaguje na změny v kódu a tvrdošíjně to drží starou verzi.
+- přejmenoval jsem metodu UExamplePluginClass::LogInfo na Log a přidal novou metodu LogFatal avšak v BluePrintech v UE se vše tváří při starém, vše je OK a vše funguje po staru,
+  takže metoda se stále jmenuje Log Info a nová metoda Log Fatal neexistuje.
+- zkoušel jsem samozřejmě Live Coding build a Refresh All Nodes v UE, potom build ve VS, prostě nic nejde to tam dostat
+- zkusil jsem kombinaci dát v VS Clean a v UE Live Coding build -> BUM💥 padlo to na:
+  Unhandled Exception: EXCEPTION_ACCESS_VIOLATION writing address 0x00007fffff0ed26c
+  UnrealEditor_CoreUObject
+
+> [!IMPORTANT]
+> Prostě nic normálního co by fungovalo za běhu nefunguje, až když zavřel UE a VS a ve složce pluginu jsem smazal složky Binaries a Intermidiate tak se to při otevírání projektu, 
+> přeptalo na rebuild a konečně to zjistilo skutečnost, že jsem přejmenoval fci LogInfo na Log. Takže to jako budu dělat při každé změně ve zdrojáku takového tanečky, aby se to milostivě
+> propsalo do UE?! 🤦‍♂️
+> ![image](https://github.com/Avatarek78/BPExample/assets/18666680/eae77941-b83c-4736-b84a-b53106c50309)
+
+
 ----
 ## Pokročilejší možnosti
 - [Nastaveni log level-u](Log_level.MD)
