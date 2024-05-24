@@ -60,9 +60,9 @@ Každopádně jediné řešení na které jsem přišel je uvedeno na konci tét
   UnrealEditor_CoreUObject
 
 > [!IMPORTANT]
-> Prostě nic normálního co by fungovalo za běhu nefunguje, až když jsem zavřel UE a VS a ve složce pluginu jsem smazal složky Binaries a Intermidiate tak se to při otevírání projektu, 
-> přeptalo na rebuild a konečně to zjistilo skutečnost, že jsem přejmenoval fci LogInfo na Log. Takže to jako budu dělat při každé změně ve zdrojáku takového tanečky, aby se to milostivě
-> propsalo do UE?! 🤦‍♂️
+> Prostě nic normálního co by fungovalo za běhu nefunguje, až když jsem zavřel UE a ve složce pluginu jsem smazal složku Binaries tak se to při otevírání projektu, přeptalo na rebuild
+> a konečně to zjistilo skutečnost, že jsem přejmenoval fci LogInfo na Log. Takže to jako budu dělat při každé změně ve zdrojáku takového tanečky, aby se to milostivě propsalo do UE?! 🤦‍♂️
+> Pokud by náhodou nestačilo smazat složku Binaries tak ještě zkusit smazat i složku Intermidiate.
 > ![image](Doc/method_name_change_detected.png)
 
 ----
