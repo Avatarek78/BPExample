@@ -21,7 +21,7 @@
 > a pokaždé úspěšně což se ještě nikdy historicky nestalo!
 > Takže to chtějí říct, že tahle tajná zkratka dělá něco jiného než klik na tlačítko Live Coding vpravo dole?
 > Proč takováto důležitá fce není k nalezení např. v menu pod Build kde bych ji čekal?
-> *Zkusím to příště ověřit ještě většími změnami jak moc je to spolehlivé.*
+> > Zkusím to příště ověřit ještě většími změnami jak moc je to spolehlivé.
 
 ❌ Předchozí den vše v poho, další den jen otevřeš projekt, klikneš na Live Coding a hle:
 
