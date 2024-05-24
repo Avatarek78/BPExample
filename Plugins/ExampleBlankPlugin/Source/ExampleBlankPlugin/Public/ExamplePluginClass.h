@@ -6,6 +6,15 @@
 #include "UObject/NoExportTypes.h"
 #include "ExamplePluginClass.generated.h"
 
+/** Available log levels. */
+UENUM(BlueprintType)
+enum class ELogLevel : uint8
+{
+    INFO UMETA(DisplayName = "Info"),
+    WARNING UMETA(DisplayName = "Warning"),
+    ERROR UMETA(DisplayName = "Error")
+};
+
 /**
  * Main class with C++ examples for UE. BlueprintType that can be used as variable in UE.
  */
@@ -23,6 +32,12 @@ public:
     UExamplePluginClass();
 
     static UExamplePluginClass* getInstance();
+
+    /**
+    * Static method is better for logging function. And this one also allows to choose log level.
+    */    
+    UFUNCTION(BlueprintCallable, Category = "PluginExample")
+    static void Log(const FString& Message, ELogLevel eLogLevel);
 
     // Example property
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PluginExample")
@@ -42,13 +57,13 @@ public:
 
     /** Print text to log as INFO. Prints a message to a log file (does not print to console). For details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine */
     UFUNCTION(BlueprintCallable, Category = "PluginExample")
-    void Log(const FString& message);
+    void LogInfo(const FString& message);
 
     /** Print text to log as warning, for details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine */
     UFUNCTION(BlueprintCallable, Category = "PluginExample")
     void LogWarn(const FString& message);
 
-    /** Print text to log as error, for details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine */
+    /** Print text to log as ERROR, for details see: https://dev.epicgames.com/documentation/en-us/unreal-engine/logging-in-unreal-engine */
     UFUNCTION(BlueprintCallable, Category = "PluginExample")
     void LogErr(const FString& message);
 	

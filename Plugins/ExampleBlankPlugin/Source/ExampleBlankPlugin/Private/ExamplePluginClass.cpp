@@ -52,6 +52,25 @@ UExamplePluginClass* UExamplePluginClass::getInstance() {
     return instance;
 }
 
+void UExamplePluginClass::Log(const FString& Message, ELogLevel eLogLevel)
+{
+    switch (eLogLevel)
+    {
+    case ELogLevel::INFO:
+        UE_LOG(LogTemp, Log, TEXT("%s"), *Message);
+        break;
+    case ELogLevel::WARNING:
+        UE_LOG(LogTemp, Warning, TEXT("%s"), *Message);
+        break;
+    case ELogLevel::ERROR:
+        UE_LOG(LogTemp, Error, TEXT("%s"), *Message);
+        break;
+    default:
+        UE_LOG(LogTemp, Log, TEXT("%s (Unknown LogLevel)"), *Message);
+        break;
+    }
+}
+
 void UExamplePluginClass::ExampleFunction()
 {
     GEngine->AddOnScreenDebugMessage(-1, 100.0f, FColor::Magenta, "UExamplePluginClass::ExampleFunction()");
@@ -62,7 +81,7 @@ void UExamplePluginClass::LogFatal(const FString& message)
     UE_LOG(LogTemp, Fatal, TEXT("%s"), *message);
 }
 
-void UExamplePluginClass::Log(const FString& message)
+void UExamplePluginClass::LogInfo(const FString& message)
 {
     UE_LOG(LogTemp, Log, TEXT("%s"), *message);
 }
