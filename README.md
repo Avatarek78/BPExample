@@ -12,16 +12,17 @@
   Do teď to vypadá jako pohoda, ale jen do té doby, než se začnou dít hrozné věci bez zjevných příčin o kterých se dozvíte v dalších řádcích níže.
 
 ----
-
-## ☠️Tyhle věci se věčně hnojí sami od sebe!☠️
-
 > [!IMPORTANT]
 > Čirou náhodou jsem přišel na klávesovou zkratku v UE a to **Ctrl+Alt+F11**, kterou mě poradil Live Coding poté co jsem ho vypnul a zapnul.
 > Zkusil jsem tuto zkratku několikrát za sebou při drobných změnách v C++ kódu a vždy se projevili. Testoval jsem to asi 10x za sebou
-> a pokaždé úspěšně což se ještě nikdy historicky nestalo!
-> Takže to chtějí říct, že tahle tajná zkratka dělá něco jiného než klik na tlačítko Live Coding vpravo dole?
-> Proč takováto důležitá fce není k nalezení např. v menu pod Build kde bych ji čekal?
-> > Zkusím to příště ověřit ještě většími změnami jak moc je to spolehlivé.
+> a pokaždé úspěšně což se ještě nikdy historicky nestalo!\
+> Takže to chtějí říct, že tahle tajná zkratka dělá něco jiného než klik na tlačítko Live Coding vpravo dole?\
+> Proč takováto důležitá fce není k nalezení např. v menu pod Build kde bych ji čekal?\
+> **Odzkoušeno i na komplikovanějších změnách v kódu, skutečně klik na Live Coding tlačítko v GUI dělá něco jiného než zkratka Ctrl+Alt+F11!!!**\
+> ❌ při kliknutí na tlačítko "Recompile and and realod C++ code for game systems on the fly" (Live Coding) to do logu vypíše hlášku "Manual recompile triggered" a změny v C++ kódu se neprojeví!\
+> ✔️ **při použití zkratky Ctrl+Alt+F11 to do logu vypíše hlášku "Accepted Live coding shortcut" a změny v C++ kódu se vždy spolehlivě projeví**
+
+## ☠️Tyhle věci se věčně hnojili sami od sebe! Než jsem začal používat výše uvedené.☠️
 
 ❌ Předchozí den vše v poho, další den jen otevřeš projekt, klikneš na Live Coding a hle:
 
