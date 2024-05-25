@@ -16,7 +16,7 @@
 ## ☠️Tyhle věci se věčně hnojí sami od sebe!☠️
 
 > [!IMPORTANT]
-> Čirou náhodou jsem přišel na klávesovou zkratku v UE a to Ctrl+Alt+F11, kterou mě poradil Live Coding poté co jsem ho vypnul a zapnul.
+> Čirou náhodou jsem přišel na klávesovou zkratku v UE a to **Ctrl+Alt+F11**, kterou mě poradil Live Coding poté co jsem ho vypnul a zapnul.
 > Zkusil jsem tuto zkratku několikrát za sebou při drobných změnách v C++ kódu a vždy se projevili. Testoval jsem to asi 10x za sebou
 > a pokaždé úspěšně což se ještě nikdy historicky nestalo!
 > Takže to chtějí říct, že tahle tajná zkratka dělá něco jiného než klik na tlačítko Live Coding vpravo dole?
