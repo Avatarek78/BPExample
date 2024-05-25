@@ -83,3 +83,4 @@ Každopádně jediné řešení na které jsem přišel je uvedeno na konci tét
 
 - [Singleton s instancí uloženou ve statické proměnné](CPP_Singleton_statically_stored.MD)
 
+- [Popis základních C++ tříd ze kterých lze v UE vytvářet BP jako jejich potomky](UE_BP_base_classes.MD)
