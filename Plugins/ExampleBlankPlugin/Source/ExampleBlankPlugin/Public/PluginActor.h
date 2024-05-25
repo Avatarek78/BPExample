@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/TextRenderComponent.h"
 #include "PluginActor.generated.h"
 
 UCLASS()
@@ -22,5 +23,19 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+private:
+	// Sphere mesh component
+	UPROPERTY(VisibleAnywhere, Category = "Components")
+	UStaticMeshComponent* SphereMesh;
+
+	// Text render component
+	UPROPERTY(VisibleAnywhere, Category = "Components")
+	UTextRenderComponent* TextComponent;
+
+	// Function to initialize the sphere mesh
+	void InitializeSphereMesh();
+
+	void InitializeTextComponent();
 
 };

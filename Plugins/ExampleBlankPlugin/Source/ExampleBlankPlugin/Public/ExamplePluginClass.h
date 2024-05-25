@@ -33,9 +33,7 @@ public:
 
     static UExamplePluginClass* getInstance();
 
-    /**
-    * Static method is better for logging function. And this one also allows to choose log level.
-    */    
+    /** Static method is better for logging function. And this one also allows to choose log level. */    
     UFUNCTION(BlueprintCallable, Category = "PluginExample")
     static void Log(const FString& Message, ELogLevel eLogLevel);
 

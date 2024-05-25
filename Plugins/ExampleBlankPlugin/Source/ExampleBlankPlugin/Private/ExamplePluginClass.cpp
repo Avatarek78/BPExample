@@ -17,7 +17,7 @@ UExamplePluginClass* UExamplePluginClass::getInstance() {
     if (instance == nullptr) {
         instance = NewObject<UExamplePluginClass>();
         /**
-        * This leads to this ERROR in UE!:
+        * "Prevent garbage collection" This sometimes leads to this ERROR in UE!:
         * LogOutputDevice: Error: === Handled ensure: ===
         * LogOutputDevice: Error: Ensure condition failed: bIsValidObjectReference  [File:D:\build\++UE5\Sync\Engine\Source\Runtime\Engine\Private\BlueprintGeneratedClass.cpp] [Line: 2370] 
         * LogOutputDevice: Error: Invalid object referenced by the PersistentFrame: 0x000009773a4ba8c0 (Blueprint object: Blueprint /Game/FirstPerson/Blueprints/BP_FirstPersonPlayerController.BP_FirstPersonPlayerController, ReferencingProperty: ObjectProperty /Game/FirstPerson/Blueprints/BP_FirstPersonPlayerController.BP_FirstPersonPlayerController_C:ExecuteUbergraph_BP_FirstPersonPlayerController:CallFunc_getExamplePluginClass_ReturnValue, Instance: BP_FirstPersonPlayerController_C /Game/FirstPerson/Maps/UEDPIE_0_FirstPersonMap.FirstPersonMap:PersistentLevel.BP_FirstPersonPlayerController_C_0, Address:
@@ -43,11 +43,11 @@ UExamplePluginClass* UExamplePluginClass::getInstance() {
         * LogOutputDevice: Error: [Callstack] 0x00007ff8daf87344 KERNEL32.DLL!UnknownFunction []
         * LogOutputDevice: Error: [Callstack] 0x00007ff8db1226b1 ntdll.dll!UnknownFunction []
         */
-        //instance->AddToRoot(); // Prevent garbage collection
-        UE_LOG(LogTemp, Log, TEXT("MyFunction called on instance of UMyClass"));
+        instance->AddToRoot(); // Prevent garbage collection
+        Log("New instance of UExamplePluginClass created.", ELogLevel::INFO);
     }
     else {
-        UE_LOG(LogTemp, Warning, TEXT("MyFunction called on instance of UMyClass"));
+        Log("Existing instance of UExamplePluginClass returned.", ELogLevel::INFO);
     }
     return instance;
 }
@@ -73,7 +73,7 @@ void UExamplePluginClass::Log(const FString& Message, ELogLevel eLogLevel)
 
 void UExamplePluginClass::ExampleFunction()
 {
-    GEngine->AddOnScreenDebugMessage(-1, 100.0f, FColor::Magenta, "UExamplePluginClass::ExampleFunction()");
+    GEngine->AddOnScreenDebugMessage(-1, 100.0f, FColor::Magenta, "** UExamplePluginClass::ExampleFunction() 4");
 }
 
 void UExamplePluginClass::LogFatal(const FString& message)

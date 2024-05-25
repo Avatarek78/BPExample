@@ -22,6 +22,11 @@
 > ❌ při kliknutí na tlačítko "Recompile and and realod C++ code for game systems on the fly" (Live Coding) to do logu vypíše hlášku "Manual recompile triggered" a změny v C++ kódu se neprojeví!\
 > ✔️ **při použití zkratky Ctrl+Alt+F11 to do logu vypíše hlášku "Accepted Live coding shortcut" a změny v C++ kódu se vždy spolehlivě projeví**
 
+**Takže build přes klik aktuálně opravdu nikdy nepoužívat!**
+![NEKLIKAT!](Doc/LiveCoding_OnClick.png)
+
+[Rozbor problému podle ChatGPT](Compilation_problems_chat_with_chatGPT.MD)
+
 ## ☠️Tyhle věci se věčně hnojili sami od sebe! Než jsem začal používat výše uvedené.☠️
 
 ❌ Předchozí den vše v poho, další den jen otevřeš projekt, klikneš na Live Coding a hle:
