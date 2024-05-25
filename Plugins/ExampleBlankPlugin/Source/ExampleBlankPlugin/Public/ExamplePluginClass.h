@@ -37,6 +37,9 @@ public:
     UFUNCTION(BlueprintCallable, Category = "PluginExample")
     static void Log(const FString& Message, ELogLevel eLogLevel);
 
+    UFUNCTION(BlueprintCallable, Category = "PluginExample")
+    static FString ReturnSomeText();
+
     // Example property
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "PluginExample")
     FString ExampleProperty;

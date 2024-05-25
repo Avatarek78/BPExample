@@ -49,6 +49,11 @@ void UExamplePluginClass::Log(const FString& Message, ELogLevel eLogLevel)
     }
 }
 
+FString UExamplePluginClass::ReturnSomeText()
+{
+    return TEXT("Hello, Unreal Engine!");
+}
+
 void UExamplePluginClass::ExampleFunction()
 {
     GEngine->AddOnScreenDebugMessage(-1, 100.0f, FColor::Magenta, "** UExamplePluginClass::ExampleFunction() 4");
