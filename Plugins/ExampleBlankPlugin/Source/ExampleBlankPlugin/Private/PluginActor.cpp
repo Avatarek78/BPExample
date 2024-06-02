@@ -69,3 +69,8 @@ void APluginActor::InitializeTextComponent()
     TextComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 50.0f)); // Adjust position to be above the sphere
 }
 
+void APluginActor::SetActorText(const FString& text)
+{
+    TextComponent->SetText(FText::FromString(text));
+}
+

@@ -38,4 +38,7 @@ private:
 
 	void InitializeTextComponent();
 
+	UFUNCTION(BlueprintCallable, Category = "PluginExample")
+	void SetActorText(const FString& text);
+
 };
